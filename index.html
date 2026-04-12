@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GACONMC | Server Minecraft</title>
-    <link rel="icon" type="image/png" href="https://i.ibb.co/wZZCHcQS/image.png">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/ZRrz3xv7/avatargcmc.png">
 
     <link rel="stylesheet" href="luat.css">
 
@@ -198,7 +198,7 @@
     </div>
     <div class="container">
         <aside class="sidebar">
-            <img src="https://i.ibb.co/wZZCHcQS/image.png" class="avatar">
+            <img src="https://i.ibb.co/ZRrz3xv7/avatargcmc.png" class="avatar">
             <h3 style="font-size: 1.1rem;">Gà Con MC</h3>
             <p style="font-size: 0.75rem; color: var(--primary); letter-spacing: 1px;">SURVIVAL CHILL</p>
 
@@ -257,7 +257,7 @@
                 </div>
 
                 <div class="copy-btn" onclick="copyIP()">
-                    <span><i class="fas fa-terminal"></i> IP: gaconmc.ddns.net:25793</span>
+                    <span><i class="fas fa-terminal"></i> IP: gaconmc.ddns.net:19033</span>
                     <span style="font-size: 0.7rem; font-weight: 800;">SAO CHÉP</span>
                 </div>
             </section>
@@ -335,7 +335,7 @@
         // Lấy dữ liệu Server
         async function updateServerStatus() {
             try {
-                const res = await fetch('https://api.mcstatus.io/v2/status/java/160.25.232.39:25793');
+                const res = await fetch('https://api.mcstatus.io/v2/status/java/185.207.166.16:19033');
                 const data = await res.json();
 
                 const sIcon = document.getElementById('status-icon');
@@ -366,7 +366,7 @@
         }
 
         function copyIP() {
-            navigator.clipboard.writeText("gaconmc.ddns.net:25793");
+            navigator.clipboard.writeText("gaconmc.ddns.net:19033");
             alert("Đã sao chép IP!");
         }
 
